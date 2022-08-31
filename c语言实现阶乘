@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int a = 0;
+	int i = 1;
+	int result = 1;
+	printf("您想计算几的阶乘");
+	scanf_s("%d", &a);
+	while (i <= a)
+	{
+		result *= i;
+		i += 1;
+	}
+	printf("%d", result);
+	return 0;
+}
