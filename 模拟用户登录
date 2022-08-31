@@ -1,0 +1,29 @@
+//模拟用户登录
+int main()
+{
+	int count = 3;
+	int password = 1;
+	while (count > 0)
+	{
+		printf("please input the password.");
+		scanf_s("%d", &password);
+		if (password == 1561701352)
+		{
+			printf("successfully login!");
+			break;
+		}
+		else
+		{
+			count -= 1;
+			printf("password incorrect,you only have %d chance.", count);
+		}
+
+			
+
+
+	}
+	if (count == 0)
+		printf("you have use up chance,please try in 3 minutes.");
+	return 0;
+}
+//if(password=="1561701352")这样会报错.
