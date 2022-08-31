@@ -1,0 +1,22 @@
+int main()
+{
+	int a = 0;
+	int fac = 1;
+	int sum = 0;
+	int i = 1;
+	for (i = 1; i < 5; i++)
+	{
+		a = i;
+		fac = 1;
+		while (a > 0)
+		{
+			fac *= a;
+			a -= 1;
+
+		}
+		sum += fac;
+    //每次while循环完fac都继承了上一次的值,所以我们要在第十行那里进入while循环之前规定他是1
+	}
+	printf("%d\n", sum);
+	return 0;
+}
