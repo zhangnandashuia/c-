@@ -1,0 +1,23 @@
+//找两个数的最大公约数;
+int main()
+{
+	int a = 0;
+	int b = 0;
+	scanf_s("%d%d", &a, &b);
+	if (a < b)
+	{
+		int i = a;
+		a = b;
+		b = i;
+	}
+	int x = a % b;
+	while (x != 0)
+	{
+		a = b;
+		b = x;
+		x = a % b;
+	}
+	printf("%d", b);
+	return 0;
+
+}
