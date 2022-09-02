@@ -1,0 +1,31 @@
+#include<stdio.h>
+//判断三个数的大小,并从大到小排序;
+int main()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	printf("请依次输入三个数;");
+	scanf_s("%d%d%d", &a, &b, &c);
+	if (a < b)
+	{
+		int i = a;
+		a = b;
+		b = i;
+	}
+	if (a < c)
+	{
+		int i = a;
+		a = c;
+		c = i;
+	}
+	if (b < c)
+	{
+		int i = b;
+		b = c;
+		c = i;
+
+	}
+	printf("%d  %d   %d", a, b, c);
+}
+//scanf 前面不要加\N不然会在输入的时候出错.
