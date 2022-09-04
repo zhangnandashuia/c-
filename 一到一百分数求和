@@ -1,0 +1,22 @@
+#include<stdio.h>
+//分数求和
+int main()
+{
+	int  i = 1;
+	double  sum = 0.0;
+	while (i < 100)
+	{
+		double num = (1.0 / i);
+		if (i % 2 == 0)
+			sum -= num;
+		else
+		{
+			sum += num;
+		}
+		i ++ ;
+	}
+	printf("%lf", sum);
+	return 0;
+}
+//普通除法结果是整数,而我们要得到分数,所以得在前面把1改成1.0,还有把0改成0.0;
+//最后输出结果是小数,所以我们在前面定义时候就应该定义成Double;double 输出时是lf;
