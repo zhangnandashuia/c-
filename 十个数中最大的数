@@ -1,0 +1,17 @@
+//十个数中最大的数;
+#include<stdio.h>
+int main()
+{
+	int arr1[] = { 1,2,3,4,8,6,5,8,9,787,33,256 };
+	int tem = arr1[0];
+	int i = 0;
+	for (i = 0;i < sizeof(arr1) / sizeof(arr1[0]) - 1;i++)
+	{
+		if (arr1[i] >= tem)
+		{
+			tem = arr1[i];
+		}
+	}
+	printf("%d", tem);
+	return 0;
+}
