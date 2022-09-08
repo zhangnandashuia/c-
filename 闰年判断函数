@@ -1,0 +1,23 @@
+void yeardef(int a)
+{
+	if (a % 100 == 0)
+	{
+		if (a % 400 == 0)
+			printf("%d年是闰年.",a);
+		else
+			printf("%d年不是闰年.",a);
+	}
+	else
+	{
+		if (a %4==0)
+			printf("%d年是闰年.",a);
+		else
+			printf("%d年不是闰年.",a);
+	}
+}
+int main()
+{
+	int year = 2022;
+	yeardef(year);
+	return 0;
+}
