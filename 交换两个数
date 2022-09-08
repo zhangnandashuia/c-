@@ -12,3 +12,4 @@ int main()
 	exc(&a, &b);
 	printf("%d%d", a, b);
 }
+// Python里面a,b =b,a 直接解决.
