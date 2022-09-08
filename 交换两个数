@@ -1,0 +1,14 @@
+#include<stdio.h>
+void exc(int* pa, int* pb)
+{
+	int i = *pa;
+	*pa = *pb;
+	*pb = i;
+}
+int main()
+{
+	int a = 20;
+	int b = 90;
+	exc(&a, &b);
+	printf("%d%d", a, b);
+}
