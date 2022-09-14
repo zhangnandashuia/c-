@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	char rank ;
+	printf("请输入你想查询的等级");
+	scanf_s("%c", &rank);
+	switch (rank)
+	{
+	case 'A':
+		printf("85+");
+		break;
+	case'B':
+		printf("70/84");
+		break;
+	case'C':
+		printf("60/69");
+		break;
+	case'D':
+		printf("60/");
+		break;
+	default:
+		printf("输入错误,请重新输入!");
+		break;
+	}
+	return 0;
+}
