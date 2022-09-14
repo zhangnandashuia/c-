@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int num = 0;
+	printf("请输入一个三位数");
+	scanf_s("%d", &num);
+	int a = num / 100;
+	int b = (num - a * 100) / 10;
+	int c = (num - a * 100 - b * 10);
+	if (pow(a, 3) + pow(b, 3) + pow(c, 3) == num)
+	{
+		printf("是水仙花数");
+	}
+	else
+	{
+		printf("不是水仙花数");
+	}
+	return 0;
+}
