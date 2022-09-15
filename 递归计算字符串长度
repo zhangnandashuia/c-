@@ -1,0 +1,17 @@
+int len(char* ptr)
+{
+	if (*ptr != '\0')
+	{
+		return len(ptr+1) + 1;
+	}
+	else
+		return 0;
+}
+
+int main()
+{
+	char arr[] = "sdtf";
+	int length;
+	length = len(arr);
+	printf("%d", length);
+}
