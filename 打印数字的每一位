@@ -1,0 +1,12 @@
+void show(num)
+{
+	if (num > 9)
+		show(num / 10);
+	printf("%d ", num % 10);
+}
+int main()
+{
+	int num=12345678;
+	show(num);
+	return 0;
+}
