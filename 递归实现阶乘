@@ -1,0 +1,16 @@
+int fac(num)
+{
+	int result;
+	if (num==1)
+	{
+		return 1;
+	}
+	return fac(num - 1) * num;
+
+}
+int main()
+{
+	int i = 6;
+	int re = fac(i);
+	printf("%d", re);
+}
