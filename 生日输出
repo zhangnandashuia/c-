@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+	int year = 2004;
+	int month = 2;
+	int day = 18;
+	printf("我的生日是%d年%d月%d日.", year, month, day);
+}
