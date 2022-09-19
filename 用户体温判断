@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int tempreture = 0;
+	printf("请输入您的体温\n");
+	scanf_s("%d", &tempreture);
+	if (tempreture > 37.5)
+		printf("No");
+	else
+		printf("yes");
+	return 0;
+}
