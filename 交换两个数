@@ -13,3 +13,74 @@ int main()
 	printf("%d%d", a, b);
 }
 // Python里面a,b =b,a 直接解决.
+#include<stdio.h>
+//位运算
+int main()
+{
+	int a = 5;
+	int b = 7;
+	//a =    000000101
+	//b =    000000111
+	// 按位与000000101 = 5
+	// 按位或000000111= 7
+	//按位异或00000010 = 2  异或的时候相同为0 ,不同为1;
+	printf("%d\n", a & b);
+	printf("%d\n", a | b);
+	printf("%d", a ^ b);
+	return 0;
+}
+int main()
+{
+	//c语言移位操作符 <<  >>
+	//保存到内存中的是补码
+	//正数的源码反码补码都是相同的.
+	//正数与负数的区别是第一个数,0是正数,1是负数
+	//算术右移看正负,左边补符号位,右边补0,逻辑右移直接补0;
+	//左移直接补0;
+	int a = 5;
+	int b = a << 2;
+	int c = a >> 1;
+	printf("%d\n", b);
+	printf("%d", c);
+	return 0;
+	//左移几位乘以几个2,右移除二取整
+}
+//交换两个数的三种方法;
+//中间变量法;
+int main()
+{
+	int a = 5;
+	int b = 7;
+	printf("a = %d  ,b = %d\n",a,b);
+
+	int tmp = a;
+	a = b;
+	b = tmp;
+	printf("a = %d  ,b = %d",a,b);
+  return 0;
+}
+//加法
+int main()
+{
+	int a = 3;
+	int b = 5;
+	printf("a = %d  ,b = %d\n", a, b);
+	a = a + b;
+	b = a - b;
+	a = a - b;
+	printf("a = %d  ,b = %d\n", a, b);
+	return 0;
+}
+//位运算法
+int main()
+{
+	int a = 3;
+	int b = 5;
+	printf("a = %d  ,b = %d\n", a, b);
+	a = a ^ b;
+	b = a ^ b;
+	a = a ^ b; 
+	printf("a = %d  ,b = %d\n", a, b);
+	//第一步a^b相当于得到了一个密码;
+	//a 和密码异或就能得到b的值,传给a,就实现了两个数的交换.
+}
