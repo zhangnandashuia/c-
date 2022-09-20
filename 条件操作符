@@ -8,7 +8,7 @@ int main()
 	else
 		b = -a;
 	int c;
-	c = (a > 3 ? a: -a);
+	c = (a > 3 ? a: -a);//第一个是条件,真则进行第二个,假则进行第三个.
 	printf("%d", c);
 	printf("%d", b);
 }
