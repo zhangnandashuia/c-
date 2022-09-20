@@ -1,0 +1,23 @@
+int main()
+{
+	//条件操作符;
+	int a = 5;
+	int b;
+	if (a > 3)
+		b = a;
+	else
+		b = -a;
+	int c;
+	c = (a > 3 ? a: -a);
+	printf("%d", c);
+	printf("%d", b);
+}
+//比较两个数大小;
+int main()
+{
+	int a = 5;
+	int b =8;
+	int c = (a > b ? a : b);
+	printf("%d", c);
+	return 0;
+}
