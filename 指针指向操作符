@@ -1,0 +1,20 @@
+//指针指向操作符
+struct stu
+{
+	char name[20];
+	int age;
+	char id[20];//创建一个学生类
+
+};
+int main()
+{
+	struct stu s1 = { "zhangnan",18,"202107030429" };//类的实例化.
+	/*printf("%s\n", s1.name);
+	printf("%d\n", s1.age);
+	printf("%s\n", s1.id);*/
+	struct stu* ptr = &s1;
+	printf("%s\n", ptr->name);
+	printf("%d\n", ptr->age);
+	printf("%s\n", ptr->id);
+	return 0;
+}
