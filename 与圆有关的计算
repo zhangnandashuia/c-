@@ -1,0 +1,11 @@
+int main()
+{
+	double r, d, l, s, p = 3.14159;
+	scanf_s("%lf", &r);
+	d = 2 * r;
+	l = 2 * p * r;
+	s = p * r * r;
+
+	printf("%.4f %.4f %.4f", d, l, s);
+	return 0;
+}
