@@ -1,0 +1,18 @@
+//向上取整和向下取整;
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+
+	float a ;
+	scanf_s("%f", &a);
+	int c = floor(a);
+	int d = ceil(a);
+	if (a > 0)
+		printf("%d", c);
+
+	else
+		printf("%d", d);
+	return 0;
+
+}
