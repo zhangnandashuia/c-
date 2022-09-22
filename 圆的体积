@@ -1,0 +1,10 @@
+#include<stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+int main()
+{
+	int r;
+	scanf_s("%d", &r);
+	double v = (4.0 / 3.0) * 3.14 * r * r * r; //pow(r,3)也可以,但要引用math.h
+	printf("%.5f", v);
+	return 0;
+}
