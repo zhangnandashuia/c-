@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	char ch;
+	scanf_s("%c", &ch);
+	int a = ch;
+	if (a % 2 == 0)
+		printf("NO");
+	else
+		printf("YES");
+}
