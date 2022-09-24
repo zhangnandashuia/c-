@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int x, y;
+	scanf("%d %d", &x, &y);
+	printf("%lld", x * y);
+	return 0;
+
+}
+//比较大的数可能不在int 范围内,用longlong输出的话是%lld
