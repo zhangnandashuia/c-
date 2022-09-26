@@ -1,0 +1,16 @@
+#include<math.h>
+#include<stdio.h>
+int main()
+{
+	int n;
+	double x;
+	scanf_s("%lf %d", &x, &n);
+	double sum = 1;
+	while (n > 0)
+	{
+		sum += pow(x, n);
+		n--;
+	}
+	printf("%.2f", sum);
+	return 0;
+}
