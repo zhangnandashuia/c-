@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int n;
+	int max=0;
+	int score;
+	scanf_s("%d", &n);
+	for (int i = 0; i < n; i++)
+	{
+		scanf_s("%d", &score);
+		if (max < score)
+			max = score;
+	}
+	printf("%d", max);
+	return 0;
+
+}
