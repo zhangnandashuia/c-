@@ -1,0 +1,16 @@
+#include<stdio.h>
+int N(int n)
+{
+	if (n != 1)
+		return N(n - 1) + n;
+	else
+		return 1;
+}
+int main()
+{
+	int i;
+	scanf_s("%d", &i);
+	int x = N(i);
+	printf("%d", x);
+	return 0;
+}
