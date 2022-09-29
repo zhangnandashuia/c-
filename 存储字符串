@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	char arr[256];
+	gets(arr);
+	/*scanf_s("%s", &arr);*/用scanf会报错.
+	printf("%d\n", strlen(arr));
+	printf("%s", arr);
+	return 0;
+}
