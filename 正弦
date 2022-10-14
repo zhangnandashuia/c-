@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#define pi 3.14
+int main()
+{
+	int a;
+	int b;
+	double c;
+	scanf_s("%d %d %lf", &a, &b, &c);
+	double sinc = sin(pi * c / 180);
+	//printf("%.3f\n", sinc);
+	double  s = a * b * sinc /(double) 2.0;
+	printf("三角形的面积为:% .0f",s);
+}
